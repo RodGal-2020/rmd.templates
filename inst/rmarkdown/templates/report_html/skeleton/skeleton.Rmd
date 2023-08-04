@@ -1,0 +1,55 @@
+---
+title: "Template Title"
+subtitle: "Template Subtitle"
+author: "José Antonio Rodríguez Gallego"
+date: "`r format(Sys.time(), '%d de %B de %Y')`"
+codification: "UTF-8"
+fontsize: 12pt
+geometry: margin=1in
+header-includes:
+   - \usepackage[spanish]{babel}
+output:
+  rmdformats::material: 
+    # thumbnails: true
+    # lightbox: true
+    gallery: true
+    highlight: haddock # haddock, github
+    collapsed: true # Flotante a la iqzda, colapsada por defecto
+    number_sections: false # Para numerar las secciones
+    df_print: kable # Data frame printing
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+# source("../config/config.R")
+```
+
+```{r libraries, message=FALSE}
+# devtools::install_github("RodGal-2020/ArchiData")
+library(ArchiData)
+
+library(tidyverse)
+library(magrittr)
+```
+
+```{r common-functions}
+# source("../utils/utils.R")
+```
+
+# First-level header
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur enim vitae pellentesque finibus. Cras a posuere eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum augue augue, bibendum vitae placerat sed, ultrices vel orci. Aenean lacinia pretium nisl quis rutrum. Fusce consequat magna ut auctor scelerisque. Nullam vehicula massa nec tortor imperdiet faucibus. Mauris vitae erat enim. Donec ut nulla in risus ullamcorper auctor eget vel magna. Nunc blandit sem vel ex tempor fringilla.
+
+Praesent in arcu tellus. Integer condimentum nisi ac feugiat tincidunt. Maecenas eu lobortis massa, nec lobortis nibh. Fusce ornare, elit ac malesuada aliquet, felis nunc blandit quam, non lacinia elit lorem ut lorem. Aliquam gravida nibh in magna facilisis, et sagittis diam porttitor. Aenean malesuada ligula eget scelerisque volutpat. Quisque fermentum feugiat nulla eget tristique. Mauris varius consectetur enim, vitae bibendum turpis efficitur et.
+
+## Second-level header
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur enim vitae pellentesque finibus. Cras a posuere eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum augue augue, bibendum vitae placerat sed, ultrices vel orci. Aenean lacinia pretium nisl quis rutrum. Fusce consequat magna ut auctor scelerisque. Nullam vehicula massa nec tortor imperdiet faucibus. Mauris vitae erat enim. Donec ut nulla in risus ullamcorper auctor eget vel magna. Nunc blandit sem vel ex tempor fringilla.
+
+Praesent in arcu tellus. Integer condimentum nisi ac feugiat tincidunt. Maecenas eu lobortis massa, nec lobortis nibh. Fusce ornare, elit ac malesuada aliquet, felis nunc blandit quam, non lacinia elit lorem ut lorem. Aliquam gravida nibh in magna facilisis, et sagittis diam porttitor. Aenean malesuada ligula eget scelerisque volutpat. Quisque fermentum feugiat nulla eget tristique. Mauris varius consectetur enim, vitae bibendum turpis efficitur et.
+
+# Another first-level header
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur enim vitae pellentesque finibus. Cras a posuere eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum augue augue, bibendum vitae placerat sed, ultrices vel orci. Aenean lacinia pretium nisl quis rutrum. Fusce consequat magna ut auctor scelerisque. Nullam vehicula massa nec tortor imperdiet faucibus. Mauris vitae erat enim. Donec ut nulla in risus ullamcorper auctor eget vel magna. Nunc blandit sem vel ex tempor fringilla.
+
+Praesent in arcu tellus. Integer condimentum nisi ac feugiat tincidunt. Maecenas eu lobortis massa, nec lobortis nibh. Fusce ornare, elit ac malesuada aliquet, felis nunc blandit quam, non lacinia elit lorem ut lorem. Aliquam gravida nibh in magna facilisis, et sagittis diam porttitor. Aenean malesuada ligula eget scelerisque volutpat. Quisque fermentum feugiat nulla eget tristique. Mauris varius consectetur enim, vitae bibendum turpis efficitur et.

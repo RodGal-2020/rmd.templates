@@ -1,0 +1,4 @@
+^renv$
+^renv\.lock$
+^rmd\.templates\.Rproj$
+^\.Rproj\.user$
